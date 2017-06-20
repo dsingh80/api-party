@@ -14,13 +14,14 @@ class App extends Component {
           </div>
           <ul className="nav-links">
             <li><NavLink to="/github">Github API</NavLink></li>
-
+            <li><NavLink to="/nasa">NASA API</NavLink></li>
           </ul>
         </div>
         
         
         <Switch>
           <Route path="/github" render={()=><p>GITHUB!</p>} />
+          <Route path="/nasa" render={()=><p>NASA!</p>} />
           <Route render={()=> <p>To begin, select one of the APIs above</p>} />
           
         </Switch>
