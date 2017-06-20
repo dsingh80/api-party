@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One%7CGentium+Book+Basic:400,400i');
+
 .App {
   text-align: center;
+  font-family: "Gentium Book Basic", "Arial", "Sans-serif", serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1{
+  font: 60px/75px 'Alfa Slab One', cursive, sans-serif;
+  text-transform: uppercase;
+}
+
+h3{
+  font:italic 400 30px/40px "Gentium Book Basic", serif;
 }
 
 .App-header {
@@ -14,11 +21,3 @@
   color: white;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
