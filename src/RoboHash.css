@@ -1,0 +1,17 @@
+.robohash form > *{
+    display: block;
+    margin: auto;
+}
+
+.robohash input{
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.robohash button{
+    padding: 10px;
+    background-color: #0184be;
+    color: #FFF;
+    border-radius: 10px;
+    border: 0;
+}
