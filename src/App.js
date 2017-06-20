@@ -21,7 +21,7 @@ class App extends Component {
         
         
         <Switch>
-          <Route path="/github" render={()=><Github />} />
+          <Route path="/github" component={Github} />
           <Route path="/nasa" render={()=><p>NASA!</p>} />
           <Route render={()=> <p>To begin, select one of the APIs above</p>} />
           

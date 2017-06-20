@@ -1,0 +1,24 @@
+.github-user{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.github-user h2{
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-family: "Arial";
+}
+.github-user h3{
+    margin: .8em auto;
+}
+.github-user a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #0184be;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './Github.css'
+import './GithubUser.css'
 
 class GithubUser extends Component {
     state = {
@@ -18,10 +18,16 @@ class GithubUser extends Component {
         this.fetchUserData();
     }
 
+    componentDidUpdate(){
+        this.fetchUserData();
+    }
+
     fetchUserData = () => {
         fetch(`https://api.github.com/users/${this.props.match.params.username}`)
             .then((response) => response.json())
             .then((userData) => this.setState({user: userData}));
+
+        console.log("Fetched Data");
     }
 
     render(){
