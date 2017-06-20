@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import{ Switch, Route, NavLink } from 'react-router-dom';
+import Github from './Github.js'
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
         
         
         <Switch>
-          <Route path="/github" render={()=><p>GITHUB!</p>} />
+          <Route path="/github" render={()=><Github />} />
           <Route path="/nasa" render={()=><p>NASA!</p>} />
           <Route render={()=> <p>To begin, select one of the APIs above</p>} />
           
