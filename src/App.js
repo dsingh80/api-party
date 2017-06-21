@@ -3,7 +3,8 @@ import './App.css';
 
 import{ Switch, Route, NavLink } from 'react-router-dom';
 import Github from './Github.js';
-import RoboHash from './RoboHash';
+import RoboHash from './RoboHash.js';
+import Nasa from './Nasa';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           </div>
           <ul className="nav-links">
             <li><NavLink to="/github">Github API</NavLink></li>
+            <li><NavLink to="/nasa">Nasa API</NavLink></li>
             <li><NavLink to="/robots">RoboHash API</NavLink></li>
           </ul>
         </div>
@@ -24,6 +26,7 @@ class App extends Component {
         <Switch>
           <Route path="/github" component={Github} />
           <Route path="/robots" component={RoboHash} />
+          <Route path="/nasa" component={Nasa} />
           <Route render={()=> <p>To begin, select one of the APIs above</p>} />
           
         </Switch>
